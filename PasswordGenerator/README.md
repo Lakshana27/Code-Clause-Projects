@@ -1,4 +1,5 @@
-# Random Password Generator using Tkinter
+# Random Password Generator using Tkinter✨🔑
+
 
 This project is a simple yet effective Random Password Generator built using Python's Tkinter library. It allows users to generate passwords with various combinations of uppercase letters, lowercase letters, numbers, and symbols.
 
