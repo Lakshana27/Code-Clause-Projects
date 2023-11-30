@@ -1,4 +1,4 @@
-# Calculator Project using Tkinter 💻🔢 
+# Calculator in Python 💻🔢 
 
 
 ## Project Overview
