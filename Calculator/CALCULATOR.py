@@ -1,70 +1,78 @@
 from tkinter import *
 
 root = Tk()
+root.title("Calculator")
 
-input = Entry(root, width=70)
-input.grid(row=0, column=0, columnspan=4, padx=15, pady=15)
+# Entry field for calculations
+calculate = Entry(root, width=70)
+calculate.grid(row=0, column=0, columnspan=4, padx=15, pady=15)
 
+
+# Function to handle number button clicks
 def click(num):
-    current = input.get()
-    input.delete(0, END)
-    input.insert(0, str(current) + str(num))
-    return
+    current = calculate.get()
+    calculate.delete(0, END)
+    calculate.insert(0, str(current) + str(num))
 
+
+# Functions for arithmetic operations
 def add():
-    current = input.get()
+    current = calculate.get()
     global math
-    math="ADD"
+    math = "ADD"
     global fnum
     fnum = int(current)
-    input.delete(0, END)
-    return
+    calculate.delete(0, END)
+
 
 def sub():
-    current = input.get()
+    current = calculate.get()
     global math
-    math="SUB"
+    math = "SUB"
     global fnum
     fnum = int(current)
-    input.delete(0, END)
-    return
+    calculate.delete(0, END)
+
 
 def mul():
-    current = input.get()
+    current = calculate.get()
     global math
-    math="MUL"
+    math = "MUL"
     global fnum
     fnum = int(current)
-    input.delete(0, END)
-    return
+    calculate.delete(0, END)
+
 
 def divi():
-    current = input.get()
+    current = calculate.get()
     global math
-    math="DIVI"
+    math = "DIVI"
     global fnum
     fnum = int(current)
-    input.delete(0, END)
-    return
+    calculate.delete(0, END)
 
+
+# Function to clear the entry field
 def clear():
-    input.delete(0, END)
-    return
+    calculate.delete(0, END)
 
+
+# Function to perform calculations
 def equal():
-    current = input.get()
+    current = calculate.get()
     snum = int(current)
-    input.delete(0, END)
-    if math=="ADD":
-        input.insert(0, str(fnum + snum))
-    elif math=="SUB":
-        input.insert(0, str(fnum - snum))
-    elif math=="MUL":
-        input.insert(0, str(fnum * snum))
-    elif math=="DIVI":
-        input.insert(0, str(fnum / snum))
-    return
+    calculate.delete(0, END)
+    if math == "ADD":
+        calculate.insert(0, str(fnum + snum))
+    elif math == "SUB":
+        calculate.insert(0, str(fnum - snum))
+    elif math == "MUL":
+        calculate.insert(0, str(fnum * snum))
+    elif math == "DIVI":
+        calculate.insert(0, str(fnum / snum))
 
+
+# Creating buttons for numbers, arithmetic operations, clear, and equal
 button_1 = Button(root, text="1", padx=50, pady=25, command=lambda: click(1))
 button_2 = Button(root, text="2", padx=50, pady=25, command=lambda: click(2))
 button_3 = Button(root, text="3", padx=50, pady=25, command=lambda: click(3))
@@ -83,6 +91,8 @@ button_divi = Button(root, text="/", padx=50, pady=25, command=divi)
 button_clear = Button(root, text="CLR", padx=43, pady=25,command=clear)
 button_equal = Button(root, text="=", padx=50, pady=25, command=equal)
 
+# Placing buttons on the grid
+# (Rows and columns placement for each button)
 button_7.grid(row=1, column=0)
 button_8.grid(row=1, column=1)
 button_9.grid(row=1, column=2)
@@ -105,4 +115,5 @@ button_0.grid(row=4, column=1)
 button_equal.grid(row=4, column=2)
 button_add.grid(row=4, column=3)
 
+# Start the main event loop
 root.mainloop()
