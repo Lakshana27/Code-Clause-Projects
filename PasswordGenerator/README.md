@@ -7,6 +7,7 @@ This project is a simple yet effective Random Password Generator built using Pyt
 
 * The Random Password Generator is a GUI-based application that assists in creating strong and secure passwords based on user-defined criteria.
 * Users can specify the length of the password and choose which character sets (uppercase, lowercase, numbers, symbols) to include in the generated password.
+* Check the demo video [click here](https://www.linkedin.com/feed/update/urn:li:activity:7136363908910518272/).
 
 ## Features
 
@@ -25,4 +26,4 @@ This project is a simple yet effective Random Password Generator built using Pyt
 
 ## Project Demo
  
-This project demo is posted on my [LinkedIn account]()
+This project demo is posted on my [LinkedIn account](https://www.linkedin.com/feed/update/urn:li:activity:7136363908910518272/)
