@@ -4,7 +4,8 @@
 ## Project Overview
 
 * The calculator application consists of a graphical user interface (GUI) developed using Tkinter.
-* Users can perform arithmetic calculations by clicking buttons for numbers and arithmetic operations. The application supports the following features:
+* Users can perform arithmetic calculations by clicking buttons for numbers and arithmetic operations.
+* Check the demo video [click here](https://www.linkedin.com/feed/update/urn:li:activity:7136362909349138432/)
 
 ## Features
 
@@ -31,4 +32,4 @@
 
 ## Project Demo
  
-This project demo is posted on my [LinkedIn account]()
+This project demo is posted on my [LinkedIn account](https://www.linkedin.com/feed/update/urn:li:activity:7136362909349138432/)
